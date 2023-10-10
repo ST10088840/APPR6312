@@ -1,0 +1,80 @@
+﻿@model IEnumerable<DonationItem>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Hello Index for Item Donations</h1>
+<div>
+    <h2 class="mt-4">Item Donations Data</h2>
+        <p>This is where the Item Donations Data will be.</p>
+        <link rel="stylesheet" href="~/css/site.css" />
+        <header>
+            <div class="logo">
+                <a href="Home">
+                    <img src="images\logo.png" width="180" height="120" />
+                </a>
+            </div>     
+        </header>
+</div>
+<body>
+    <div class="text-center">
+        <h1 class="tableHeader">Current Item Donations</h1>
+        <p class="tableDesc">View all the item donations that are currently pledged:.</p>
+        <br>
+    </div>
+
+    @*<a type="button" button asp-controller="DonationItem" asp-action="Detail" asp-route-id="@Item.Id" class="btn-2">View</a>*@
+    <a class="btn_login" href="donationitem/create">Add Item Donation</a>
+    <br>
+    <br>
+    <div class="basicTable">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Donation ID</th>
+                    <th>Catagory</th>
+                    <th>Description</th>
+                    <th>Number of Items</th>
+                    <th>Donation Date</th>
+                    <th>Doner</th>
+                    <th>Disaster</th>
+                </tr>
+            </thead>
+            @foreach (var donationItem in Model)
+            {
+                <tr>
+                    <td>@donationItem.ItemDonationId</td>
+                    <td>@if (donationItem.Catagory != null)
+                        {
+                            @donationItem.Catagory.CatagoryName
+                        }
+                        else
+                        {
+                            @donationItem.Catagory
+                        }</td>
+                    <td>@donationItem.Description</td>
+                    <td>@donationItem.numItems</td>
+                    <td>@donationItem.DonationDate</td>
+                    <td>@donationItem.Donor</td>
+                    <td>
+                        @if (donationItem.Disaster != null)
+                        {
+                            @donationItem.Disaster.Title
+                        }
+                        else
+                        {
+                            @donationItem.Disaster
+                        }
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</body>

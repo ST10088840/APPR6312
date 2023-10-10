@@ -1,0 +1,63 @@
+﻿@model IEnumerable<ApplicationUser>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and User List</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Light gray background */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            background-color: #333; /* Orange header background */
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .btn_submit {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333; /* Orange button background */
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            .btn_submit:hover {
+                background-color: #0056b3; /* Darker blue on hover */
+            }
+
+        .jumbotron {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, User !</h1>
+        <div class="jumbotron">
+            <h2>Welcome to the Disaster Alleviation Fund</h2>
+            <p>Thank you for your generous donation. Your support makes a difference in the lives of those in need.</p>
+        </div>
+        <a class="btn_submit" href="create">Sign up</a>
+    </div>
+</body>
+</html>

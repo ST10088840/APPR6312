@@ -1,0 +1,94 @@
+﻿@model DonationItem
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Donation of Items</h1>
+<link rel="stylesheet" href="~/css/site.css" />
+        <body>
+
+            <div class="logo">
+                <a href="Home">
+                    <img src="../images\logo.png"  width="180" height="120"/>
+                </a>
+            </div>
+
+    <form method="post" asp-action="Create">
+
+        @*simple*@
+        @*<div class="mb-3">
+            <label asp-for="CatagoryID" class="form-label">Catagory</label>
+            <select asp-for="CatagoryID" class="form-select">
+                <option value="">Select a catagory</option>
+                <!-- Include options for available disasters -->
+                <option value="1">Clothes</option>
+                <option value="2">Non-Perishable Food</option>
+                <!-- Add more options as needed -->
+            </select>
+            <span asp-validation-for="CatagoryID" class="text-danger"></span>
+        </div>*@
+        @*broken chat solution*@
+        @*<div class="mb-3">
+            <label asp-for="CatagoryID" class="form-label">Category</label>
+            <select asp-for="CatagoryID" class="form-select" asp-items="@(ViewData["Categories"] as SelectList)">
+                <option value="">Select a category</option>
+            </select>
+            <span asp-validation-for="CatagoryID" class="text-danger"></span>
+        </div>*@
+        @*simple working*@
+        <div class="mb-3">
+            <label asp-for="Catagory" class="form-label">Catagory</label>
+            <select asp-for="Catagory" class="form-select" rows="3" placeholder="Enter Catagory">
+                <option invalid value="">Select a catagory</option>
+                <option value="1">Clothes</option>
+                <option value="2">Non-Perishable Food</option>
+            </select>
+            <span asp-validation-for="Catagory" class="text-danger"></span>
+        </div>
+        @*video but not*@
+        @*<div class="mb-3"> 
+            <label asp-for="Catagory" class="form-label">Catagory</label>
+            <select asp-for="Catagory" asp-items="@Model.Catagory" placeholder="Enter Catagory">
+                <option>--Select--</option>
+            </select>
+            <span asp-validation-for="Catagory" class="text-danger"></span>
+        </div>*@
+
+
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label">Description</label>
+            <textarea asp-for="Description" class="form-control" rows="3" placeholder="Enter description"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="numItems" class="form-label">Number of Items</label>
+            <input asp-for="numItems" class="form-control" type="number" />
+            <span asp-validation-for="numItems" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="DonationDate" class="form-label">Donation Date</label>
+            <input asp-for="DonationDate" class="form-control" type="date" />
+            <span asp-validation-for="DonationDate" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Donor" class="form-label">Donor</label>
+            <input asp-for="Donor" class="form-control" placeholder="Enter donor name" />
+            <span asp-validation-for="Donor" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+        <label asp-for="DisasterId" class="form-label">Disaster</label>
+        <select asp-for="DisasterId" class="form-select">
+            <option value="">Select a disaster</option>
+            <!-- Include options for available disasters -->
+            <option value="1">Disaster 1</option>
+            <option value="2">Disaster 2</option>
+            <!-- Add more options as needed -->
+        </select>
+        <span asp-validation-for="DisasterId" class="text-danger"></span>
+    </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+    </body>

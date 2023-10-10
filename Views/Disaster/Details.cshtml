@@ -1,0 +1,28 @@
+﻿@model Disaster
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>This is the data for disaster @Model.Location</h1>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Disaster ID</th>
+        <th>Title</th>
+        <th>Location</th>
+        <th>Description</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+    </tr>
+    </thead>
+    <tr>
+        <td>@Model.DisasterId</td>
+        <td>@Model.Title</td>
+        <td>@Model.Description</td>
+        <td>@Model.Location</td>
+        <td>@Model.StartDate</td>
+        <td>@Model.EndDate</td>
+    </tr>
+</table>

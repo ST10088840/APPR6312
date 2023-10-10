@@ -1,0 +1,46 @@
+﻿@model Disaster
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Disaster Report</h1>
+<link rel="stylesheet" href="~/css/site.css" />
+<body>
+
+    <div class="logo">
+        <a href="Home">
+            <img src="../images\logo.png" width="180" height="120" />
+        </a>
+    </div>
+
+    <form method="post" asp-action="Create">
+        <div class="mb-3">
+            <label asp-for="Title" class="form-label">Title</label>
+            <input asp-for="Title" class="form-control" placeholder="Enter title" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Location" class="form-label">Location</label>
+            <input asp-for="Location" class="form-control" placeholder="Enter location" />
+            <span asp-validation-for="Location" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Description" class="form-label">Description</label>
+            <textarea asp-for="Description" class="form-control" rows="3" placeholder="Enter description"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="StartDate" class="form-label">Start Date</label>
+            <input asp-for="StartDate" class="form-control" type="date" />
+            <span asp-validation-for="StartDate" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="EndDate" class="form-label">End Date</label>
+            <input asp-for="EndDate" class="form-control" type="date" />
+            <span asp-validation-for="EndDate" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+</body>

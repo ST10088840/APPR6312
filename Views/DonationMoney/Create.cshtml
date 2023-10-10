@@ -1,0 +1,47 @@
+﻿@model DonationMoney
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Donation of Money</h1>
+<link rel="stylesheet" href="~/css/site.css" />
+<body>
+
+    <div class="logo">
+        <a href="Home">
+            <img src="../images\logo.png" width="180" height="120" />
+        </a>
+    </div>
+
+    <form method="post" asp-action="Create">
+        <div class="mb-3">
+            <label asp-for="Amount" class="form-label">Amount</label>
+            <input asp-for="Amount" class="form-control" placeholder="Enter amount" />
+            <span asp-validation-for="Amount" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Date" class="form-label">Date</label>
+            <input asp-for="Date" class="form-control" type="date" />
+            <span asp-validation-for="Date" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Doner" class="form-label">Donor</label>
+            <input asp-for="Doner" class="form-control" placeholder="Enter donor name" />
+            <span asp-validation-for="Doner" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="DisasterId" class="form-label">Disaster</label>
+            <select asp-for="DisasterId" class="form-select">
+                <option value="">Select a disaster</option>
+                <!-- Include options for available disasters -->
+                <option value="1">Disaster 1</option>
+                <option value="2">Disaster 2</option>
+                <!-- Add more options as needed -->
+            </select>
+            <span asp-validation-for="DisasterId" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</body>

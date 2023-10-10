@@ -1,0 +1,64 @@
+﻿@model IEnumerable<DonationMoney>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Hello Index for Money Donations</h1>
+<div>
+    <h2 class="mt-4">Money Donations Data</h2>
+    <p>This is where the Money Donations Data will be.</p>
+    
+        <link rel="stylesheet" href="~/css/site.css" />
+        <header>
+            <div class="logo">
+                <a href="Home">
+                    <img src="images\logo.png" width="180" height="120" />
+                </a>
+            </div>
+        </header>
+        </div>
+        <body>
+            <div class="text-center">
+                <h1 class="tableHeader">Current Money Donations</h1>
+                <p class="tableDesc">View all the money donations that are currently pledged:.</p>
+                <br>
+            </div>
+
+            <a class="btn_login" href="donationmoney/create">Add Money Donation</a>
+            <br>
+            <br>
+            <div class="basicTable">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Donation ID</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Doner</th>
+                            <th>Disaster</th>
+                        </tr>
+                    </thead>
+                    @foreach (var donationMoney in Model)
+                    {
+                        <tr>
+                            <td>@donationMoney.DonationMoneyId</td>
+                            <td>@donationMoney.Amount</td>
+                            <td>@donationMoney.Date</td>
+                            <td>@donationMoney.Doner</td>
+                            <td>
+                                @if (donationMoney.Disaster != null)
+                                {
+                                    @donationMoney.Disaster.Title
+                                }
+                                else
+                                {
+                                    @donationMoney.Disaster
+                                }
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+            </div>
+        </body>

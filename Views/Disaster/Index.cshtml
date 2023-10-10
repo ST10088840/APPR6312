@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Disaster>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Hello Index for Disasters</h1>
+<div>
+    <h2 class="mt-4">Disaster Data</h2>
+    <p>This is where the Disaster Data will be.</p>
+    
+        <link rel="stylesheet" href="~/css/site.css" />
+        <header>
+            <div class="logo">
+                <a href="Home">
+                    <img src="images\logo.png"  width="180" height="120"/>
+                </a>
+            </div>
+        </header>
+</div>
+<body>
+    <div class="text-center">
+        <h1 class="tableHeader">Current Disasters</h1>
+        <p class="tableDesc">View all the disasters that are currently happening:.</p>
+        <br>
+    </div>
+
+    <a class="btn_login" href="disaster/create">Add Disaster</a>
+    <br>
+    <br>
+    <div class="basicTable">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Disaster ID</th>
+                    <th>Title</th>
+                    <th>Location</th>
+                    <th>Description</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                </tr>
+            </thead>
+            @foreach (var disaster in Model)
+            {
+                <tr>
+                    <td>@disaster.DisasterId</td>
+                    <td>@disaster.Title</td>
+                    <td>@disaster.Location</td>
+                    <td>@disaster.Description</td>
+                    <td>@disaster.StartDate</td>
+                    <td>@disaster.EndDate</td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</body>

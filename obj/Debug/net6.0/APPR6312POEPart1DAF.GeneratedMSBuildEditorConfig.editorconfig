@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = APPR6312POEPart1DAF
+build_property.RootNamespace = APPR6312POEPart1DAF
+build_property.ProjectDir = C:\Users\lab_services_student\source\repos\APPR6312POEPart1DAF\APPR6312POEPart1DAF\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\lab_services_student\source\repos\APPR6312POEPart1DAF\APPR6312POEPart1DAF
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/ApplicationUser/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25Vc2VyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/ApplicationUser/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbGljYXRpb25Vc2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/Catagory/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/Catagory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0YWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/Disaster/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzYXN0ZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/Disaster/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzYXN0ZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/Disaster/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzYXN0ZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/Disaster/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzYXN0ZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/DonationItem/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25JdGVtXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/DonationItem/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25JdGVtXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/DonationItem/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25JdGVtXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/DonationMoney/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25Nb25leVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/DonationMoney/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25Nb25leVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/DonationMoney/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25Nb25leVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-dy4cupx7by

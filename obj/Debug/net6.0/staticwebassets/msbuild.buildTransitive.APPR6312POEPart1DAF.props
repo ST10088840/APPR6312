@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\APPR6312POEPart1DAF.props" />
+</Project>

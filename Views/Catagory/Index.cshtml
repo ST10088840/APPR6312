@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Catagory>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Hello Index for Disasters</h1>
+<div>
+    <h2 class="mt-4">Catagory Data</h2>
+    <p>This is where the Catagory Data will be.</p>
+    <header>
+        <link rel="stylesheet" href="~/css/site.css" />
+        
+            <div class="logo">
+                <a href="Home">
+                    <img src="images\logo.png" width="180" height="120" />
+                </a>
+            </div>
+    </header>
+</div>
+    <body>
+
+    <div class="text-center">
+        <h1 class="tableHeader">Current Categories</h1>
+        <p class="tableDesc">View all the catagories that are currently tracked:.</p>
+        <br>
+    </div>
+
+    <a class="btn_login" href="catagory/create">Add Catagory</a>
+    <br>
+    <br>
+    <div class="basicTable">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Category ID</th>
+                    <th>Category Name</th>
+                </tr>
+            </thead>
+            @foreach (var catagory in Model)
+            {
+                <tr>
+                    <td>@catagory.CatagoryId</td>
+                    <td>@catagory.CatagoryName</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>

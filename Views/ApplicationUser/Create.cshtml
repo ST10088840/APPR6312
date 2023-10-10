@@ -1,0 +1,103 @@
+﻿@model ApplicationUser
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 50px); /* Adjust for the header height */
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .text-danger {
+            color: red;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .btn-primary:hover {
+                background-color: #0056b3;
+            }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="Home">
+            <img src="../images/logo.png" width="180" height="120" />
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <h1>Sign Up as a New User</h1>
+            <form method="post" asp-action="Create">
+                <div class="form-group">
+                    <label asp-for="UserName" class="form-label">User Name</label>
+                    <input asp-for="UserName" class="form-control" placeholder="Enter user name" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="UserEmail" class="form-label">Email</label>
+                    <input asp-for="UserEmail" class="form-control" placeholder="Enter email" />
+                    <span asp-validation-for="UserEmail" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="form-label">Password</label>
+                    <input asp-for="Password" class="form-control" type="password" placeholder="Enter password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <a class="btn_submit" href="index">Login</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
