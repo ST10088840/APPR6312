@@ -8,6 +8,7 @@ using System.Configuration;
 var builder = WebApplication.CreateBuilder(args);
 
 //extra comment for part2
+//extra comment for part2 number 2
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IDisasterRepository, DisasterRepository>();

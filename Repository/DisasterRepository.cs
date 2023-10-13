@@ -44,8 +44,17 @@ namespace APPR6312POEPart1DAF.Repository
 
         public async Task<Disaster> GetByIdAsync(int id)
         {
-            return await _context.Disasters.FirstOrDefaultAsync(i => i.DisasterId == id);
+            var disaster =  await _context.Disasters
+                .Include(d => d.DonationsMoney)
+                .Include(d => d.DonationsItems)
+                .FirstOrDefaultAsync(d => d.DisasterId == id);
+            if (disaster == null)
+            {
+                //tbd
+            }
+            return disaster;
         }
+
 
         public bool Save()
         {
@@ -59,5 +68,6 @@ namespace APPR6312POEPart1DAF.Repository
             _context.Update(disaster);
             return Save();
         }
+
     }
 }

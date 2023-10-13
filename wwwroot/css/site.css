@@ -19,6 +19,11 @@ body {
     margin-bottom: 60px;
 }
 
+th {
+    min-width: 180px;
+}
+
+
 
 h1 {
     background-color: orangered; /* Light gray background */
@@ -44,4 +49,24 @@ h1 {
     .btn_1:hover {
         background-color: #0056b3; /* Darker blue on hover */
     }
+
+.btn_login {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #FFA500; /* Custom orange color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    border: 1px solid #FFA500; /* Custom orange border color */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition on hover */
+}
+
+.btn_login:hover {
+    background-color: #FF8C00; /* Custom orange color on hover (slightly darker) */
+    color: #fff; /* Text color on hover */
+    border-color: #FF8C00; /* Custom orange border color on hover (slightly darker) */
+}
+
 

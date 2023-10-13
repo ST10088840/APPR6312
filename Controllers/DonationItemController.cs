@@ -40,6 +40,34 @@ namespace APPR6312POEPart1DAF.Controllers
             return View();
         }
 
+        public IActionResult MoneyToItems()
+        {
+            // Retrieve the value of the temporary estimated cost input
+            var model = new DonationItem();
+            var temporaryEstimatedCost = Request.Form["TemporaryEstimatedCost"];
+
+            // Parse the value to a numeric type if needed
+            if (decimal.TryParse(temporaryEstimatedCost, out var estimatedCostValue))
+            {
+                // Check the estimated cost against a certain limit
+                if (estimatedCostValue > 13000)
+                {
+                    // Handle the case where the estimated cost exceeds the limit
+                    ModelState.AddModelError("TemporaryEstimatedCost", "Estimated cost exceeds the limit.");
+                }
+            }
+
+            // Check other model properties, validate, and save to the database
+            if (ModelState.IsValid)
+            {
+                // Your logic to save the model to the database
+                return RedirectToAction("Create");
+            }
+
+            // If there are validation errors, return the view with error messages
+            return View(model);
+        }
+
         [HttpPost]
         public IActionResult Create(DonationItem donationItem)
         {

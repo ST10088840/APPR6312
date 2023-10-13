@@ -34,6 +34,24 @@ namespace APPR6312POEPart1DAF.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Summary(int id)
+        {
+            // Retrieve the disaster and related data
+            if (id == null)
+            {
+                id = 2;
+            }
+            var disaster = await _disasterRepository.GetByIdAsync(id);
+
+            if (disaster == null)
+            {
+                return NotFound();
+            }
+
+            return View(disaster);
+        }
+
+
         [HttpPost]
         public IActionResult Create(Disaster disaster)
         {
@@ -77,5 +95,25 @@ namespace APPR6312POEPart1DAF.Controllers
             }
             return View("Edit", disasterVM);
         }
+
+        //public async Task<IActionResult> DisasterDetails(int id)
+        //{
+        //    // Fetch the disaster by ID
+        //    var disaster = await _disasterRepository.GetByIdAsync(id)
+
+        //    _disasterRepository.Entry(disaster).Collection(d => d.DonationMonies).Load();
+        //    _disasterRepository.Entry(disaster).Collection(d => d.DonationItems).Load();
+        //        .Include(d => d.DonationMonies)
+        //        .Include(d => d.DonationItems)
+        //        .FirstOrDefault(d => d.DisasterId == id);
+
+        //    if (disaster == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return View(disaster);
+        //}
+
     }
 }

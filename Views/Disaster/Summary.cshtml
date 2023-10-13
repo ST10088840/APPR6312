@@ -1,0 +1,160 @@
+﻿@model APPR6312POEPart1DAF.Models.Disaster
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h1>Disaster Details and Donation Summary</h1>
+<h2>@Model.Title</h2>
+
+
+
+<!-- Display Disaster details -->
+<table class="table">
+    <thead>
+    <tr>
+        <th>Disaster ID</th>
+        <th>Title</th>
+        <th>Location</th>
+        <th>Description</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+    </tr>
+    </thead>
+    <tr>
+        <td>@Model.DisasterId</td>
+        <td>@Model.Title</td>
+        <td>@Model.Description</td>
+        <td>@Model.Location</td>
+        <td>@Model.StartDate</td>
+        <td>@Model.EndDate</td>
+    </tr>
+</table>
+
+<br>
+@*<div>
+    <button id="decrement">Decrement</button>
+    <span id="disasterId">2</span>
+    <button id="increment">Increment</button>
+</div>
+
+<script>
+    const decrementButton = document.getElementById('decrement');
+    const incrementButton = document.getElementById('increment');
+    const disasterIdElement = document.getElementById('disasterId');
+
+    let disasterId = 2; // Initialize with the default disaster ID
+
+    decrementButton.addEventListener('click', () => {
+        // Decrement the disaster ID
+        if (disasterId > 2) {
+            disasterId--;
+            disasterIdElement.textContent = disasterId;
+            navigateToDisasterSummary(disasterId);
+        }
+    });
+
+    incrementButton.addEventListener('click', () => {
+        // Increment the disaster ID
+        disasterId++;
+        disasterIdElement.textContent = disasterId;
+        navigateToDisasterSummary(disasterId);
+    });
+    function navigateToDisasterSummary(id) {
+        // Update the URL to navigate to the desired disaster summary page
+        window.location.href = `../disaster/summary/${id}`;
+</script>
+
+<style>
+    button {
+        padding: 5px 10px;
+        margin: 5px;
+        border: none;
+        background-color: ##FFA500;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+            background-color: ##FF8C00;
+    }
+
+    #disasterId {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0 10px;
+    }
+</style>*@
+
+<br>
+<br>
+
+    <h3>Donation Items</h3>
+@if (Model.DonationsItems.Any())
+{
+    <table>
+        <tr>
+            <th>Item Donation ID</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Number of Items</th>
+            <th>Donation Date</th>
+            <th>Donor</th>
+        </tr>
+        @foreach (var item in Model.DonationsItems)
+        {
+            <tr>
+                <td>@item.ItemDonationId</td>
+                <td>@item.Catagory.CatagoryName</td>
+                <td>@item.Description</td>
+                <td>@item.numItems</td>
+                <td>@item.DonationDate</td>
+                <td>@item.Donor</td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <p>No donation items are associated with this disaster.</p>
+}
+
+<br>
+<a class="btn_login" href="../../donationItem/create">Donate Items</a> <a class="btn_login" href="../../donationItem/moneyToItems">Buy Goods with Money Donated</a>
+<br>
+
+<h3>Donation Money</h3>
+    <!-- Iterate through DonationMoney collection and display details -->
+    @if (Model.DonationsMoney.Any())
+{
+    <table>
+        <tr>
+            <th>Donation Money ID</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Donor</th>
+        </tr>
+        @foreach (var money in Model.DonationsMoney)
+        {
+            <tr>
+                <td>@money.DonationMoneyId</td>
+                <td>@money.Amount</td>
+                <td>@money.Date</td>
+                <td>@money.Doner</td>
+            </tr>
+        }
+    </table>
+    <br>
+    <br>
+        <p>Total Donation Money: @Model.DonationsMoney.Sum(m => m.Amount)</p>
+}
+else
+{
+    <p>No money donation are associated with this disaster.</p>
+}
+
+<br>
+<a class="btn_login" href="../../donationMoney/create">Donate Money</a>
