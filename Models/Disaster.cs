@@ -13,5 +13,10 @@ namespace APPR6312POEPart1DAF.Models
         public string? Description { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
+
+        //navigation properties to represent realted entities
+        public ICollection<DonationMoney>? DonationsMoney { get; set; }
+
+        public ICollection<DonationItem>? DonationsItems { get; set; }
     }
 }

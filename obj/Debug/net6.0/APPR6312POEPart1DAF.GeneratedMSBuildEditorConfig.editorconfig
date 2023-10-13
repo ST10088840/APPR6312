@@ -48,6 +48,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzYXN0ZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/Disaster/Summary.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzYXN0ZXJcU3VtbWFyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/DonationItem/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25JdGVtXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,6 +62,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/DonationItem/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25JdGVtXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/DonationItem/MoneyToItems.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9uYXRpb25JdGVtXE1vbmV5VG9JdGVtcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lab_services_student/source/repos/APPR6312POEPart1DAF/APPR6312POEPart1DAF/Views/DonationMoney/Create.cshtml]
